@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>For You</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <main id="app">
+
+        <!-- =====================================
+             INTRO / STORY
+        ====================================== -->
+
+        <section id="storyScreen" class="screen active">
+
+            <div class="storyContent">
+
+                <h1 id="storyTitle"></h1>
+
+                <p id="storyMessage"></p>
+
+
+                <!-- MEMORY -->
+
+                <div
+                    id="memoryContainer"
+                    class="hidden"
+                >
+
+                    <div
+                        id="memoryPlaceholder"
+                    >
+                       your photo goes here
+                    </div>
+
+                    <img
+                        id="memoryImage"
+                        src=""
+                        alt="A memory"
+                    >
+
+                    <p id="memoryCaption"></p>
+
+                </div>
+
+
+                <!-- THREE CARDS -->
+
+                <div
+                    id="memoryCards"
+                    class="hidden"
+                >
+
+                    <button
+                        class="memoryCard"
+                        data-card="0"
+                    >
+                        <span>01</span>
+                        <strong>
+                            You can be yourself
+                        </strong>
+                    </button>
+
+
+                    <button
+                        class="memoryCard"
+                        data-card="1"
+                    >
+                        <span>02</span>
+                        <strong>
+                            You don't have to hide anything
+                        </strong>
+                    </button>
+
+
+                    <button
+                        class="memoryCard"
+                        data-card="2"
+                    >
+                        <span>03</span>
+                        <strong>
+                            You don't have to be perfect
+                        </strong>
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="cardReveal"
+                    class="hidden"
+                ></div>
+
+
+                <!-- SECRET -->
+
+                <div
+                    id="secretArea"
+                    class="hidden"
+                >
+
+                    <button id="secretButton">
+                        look closer
+                    </button>
+
+                    <p id="secretText"></p>
+
+                </div>
+
+
+                <!-- STORY BUTTONS -->
+
+                <div id="storyButtons">
+
+                    <button id="storyBack">
+                        Back
+                    </button>
+
+                    <button id="storyNext">
+                        Begin
+                    </button>
+
+                </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             LETTER INTRO
+        ====================================== -->
+
+        <section
+            id="musicScreen"
+            class="screen"
+        >
+
+            <div class="musicContent">
+
+                <p class="label">
+                    ONE LAST THING
+                </p>
+
+                <h2>
+                    Ready to open my letter?
+                </h2>
+
+                <p>
+                    Everything I've been wanting to say is waiting for you.
+                </p>
+
+                <div class="musicButtons">
+
+                    <button id="musicBack">
+                        Back
+                    </button>
+
+                    <button id="readLetter">
+                        Open my letter
+                    </button>
+
+                </div>
+
+        </section>
+
+
+        <!-- =====================================
+             LETTER
+        ====================================== -->
+
+        <section id="letterScreen">
+
+            <div id="letterScroll">
+
+                <div id="letterInner">
+
+                    <div id="letterText"></div>
+
+                </div>
+
+
+            </div>
+
+            <div id="letterControls">
+
+                <button id="letterBack">
+                    Back
+                </button>
+
+                <button id="letterNext">
+                    Continue
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
